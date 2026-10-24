@@ -114,6 +114,22 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        
+        'mysql_docente' => [
+            'driver' => 'mysql',
+            'host' => env('DB_DOCENTE_HOST'),
+            'port' => env('DB_DOCENTE_PORT', 3306),
+            'database' => env('DB_DOCENTE_DATABASE'),
+            'username' => env('DB_DOCENTE_USERNAME'),
+            'password' => env('DB_DOCENTE_PASSWORD'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+        ],
+
+
+
     ],
 
     /*
