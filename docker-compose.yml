@@ -1,0 +1,14 @@
+
+services:
+  app:
+    build: .
+    image: gestion-escolar:nombre-grupo
+    ports:
+      - "0.0.0.0:8000:8000"
+    volumes:
+      - .:/var/www
+    working_dir: /var/www
+    env_file:
+      - .env
+    command: php artisan serve --host=0.0.0.0 --port=8000
+    restart: unless-stopped
